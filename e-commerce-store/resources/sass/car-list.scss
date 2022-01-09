@@ -1,0 +1,57 @@
+.car {
+    &-list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        row-gap: 40px;
+        column-gap: 40px;
+        margin: 50px 0;
+    }
+
+    &-card {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        flex: 0 0 30%;
+        padding: 30px;
+        background-color: #ededed;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        box-shadow: 7px 7px 12px rgb(0 0 0 / 10%);
+        cursor: pointer;
+        text-decoration: none;
+        color: inherit;
+
+        &:hover {
+            text-decoration: none;
+            color: inherit;
+        }
+    }
+
+    &-image {
+        max-width: 100%;
+    }
+
+    &-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &-name {
+        font-size: 24px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 15px;
+    }
+
+    &-price {
+        font-size: 17px;
+        font-weight: 600;
+        background-color: #e31a1a;
+        color: #fff;
+        width: fit-content;
+        margin-top: 10px;
+        padding: 10px 20px;
+        align-self: flex-end;
+    }
+}
