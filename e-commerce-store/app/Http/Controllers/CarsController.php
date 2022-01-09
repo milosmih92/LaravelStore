@@ -8,7 +8,7 @@ use App\Models\Car;
 class CarsController extends BaseController
 {
     public function getCarListView($page = 1) {
-        $cars = Car::all()->skip(($page-1)*9)->take(9);
+        $cars = Car::paginate(9);
 
         return view('car-list', ['cars' => $cars]);
     }

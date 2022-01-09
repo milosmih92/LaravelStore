@@ -11361,15 +11361,6 @@ footer {
   padding: 0 30px;
 }
 
-.header {
-  margin: 20px 0;
-  text-align: center;
-}
-.header h1, .header .h1 {
-  font-size: 30px;
-  padding: 25px 0;
-}
-
 footer {
   background-color: #f5f7f6;
   padding: 30px 60px;
@@ -11387,6 +11378,15 @@ footer p a, footer p a:hover {
 main {
   display: flex;
   flex-direction: column;
+}
+main .header {
+  margin: 20px 0;
+  text-align: center;
+}
+main .header h1, main .header .h1 {
+  font-size: 30px;
+  font-weight: 700;
+  padding: 25px 0;
 }
 main .carousel {
   min-width: 1400px;
@@ -11496,4 +11496,58 @@ main .home-cards .card p {
   margin-top: 10px;
   padding: 10px 20px;
   align-self: flex-end;
+}
+
+.pagination {
+  align-self: center;
+  margin: 10px 0 40px 0;
+}
+.pagination .page-item .page-link {
+  font-size: 16px;
+  padding: 14px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 50%;
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.pagination .page-item.active .page-link {
+  border-color: #000;
+  background-color: #000;
+  color: #fff;
+}
+
+.car-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+.car-details-image {
+  max-width: 100%;
+}
+.car-details-image-container {
+  align-self: center;
+}
+.car-details-table {
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+  border: 3px solid #ccc;
+  margin-top: 50px;
+}
+.car-details-table-item {
+  flex: 0 0 50%;
+  padding: 20px 40px;
+  border: 3px solid #ccc;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  font-size: 20px;
+  font-weight: 700;
+}
+.car-details-table-price .car-details-table-value {
+  color: #e31a1a;
 }

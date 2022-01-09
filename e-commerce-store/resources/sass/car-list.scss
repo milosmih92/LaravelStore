@@ -55,3 +55,30 @@
         align-self: flex-end;
     }
 }
+
+.pagination {
+    align-self: center;
+    margin: 10px 0 40px 0;
+
+    .page-item {
+        .page-link {
+            font-size: 16px;
+            padding: 14px;
+            color: #000;
+            border: 1px solid #000;
+            border-radius: 50%;
+            margin: 0 5px;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+
+        &.active {
+            .page-link {
+                border-color: #000;
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+}

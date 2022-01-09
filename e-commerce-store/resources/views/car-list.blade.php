@@ -1,4 +1,7 @@
 <x-layout>
+    <div class="header">
+        <h1>Find your perfect car at Milos Motor Sales.</h1>
+    </div>
     <div class="car-list">
         @foreach($cars as $car)
             <a href="/car/{{$car->id}}" class="car-card">
@@ -11,5 +14,8 @@
                 </div>
             </a>
         @endforeach
+    </div>
+    <div class="pagination">
+        {!! $cars->links() !!}
     </div>
 </x-layout>

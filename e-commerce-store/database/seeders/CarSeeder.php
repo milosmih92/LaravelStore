@@ -154,7 +154,7 @@ class CarSeeder extends Seeder
             'cubicCapacity' => 2000,
             'fuelType' => 'Diesel',
             'power' => 235,
-            'imageUrl' => 'https://images.wallpapersden.com/image/download/volvo-xc90-inscription_Zm1uaGWUmZqaraWkpJRmZ21lrWxnZQ.jpg',
+            'imageUrl' => 'https://cdn.motor1.com/images/mgl/PP9PG/s3/2020-volvo-xc90-lead-image.webp',
             'price' => 28999
         ]);
 
