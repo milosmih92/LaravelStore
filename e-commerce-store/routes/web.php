@@ -18,6 +18,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::post('/send-contact-us', [CarsController::class, 'sendContactEmail']);
+
 Route::get('/cars', [CarsController::class, 'getCarListView']);
 
 Route::get('/car/{id}', [CarsController::class, 'getCarView']);

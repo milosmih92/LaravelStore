@@ -11551,3 +11551,62 @@ main .home-cards .card p {
 .car-details-table-price .car-details-table-value {
   color: #e31a1a;
 }
+
+.contact-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact-us h3, .contact-us .h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+.contact-us-form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  margin-top: 70px;
+}
+.contact-us .form-field {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 50%;
+  padding: 20px 40px 40px 30px;
+}
+.contact-us .form-field-label {
+  font-size: 19px;
+  margin-bottom: 15px;
+}
+.contact-us .form-field-value {
+  height: 44px;
+  border-radius: 5px;
+  border: 1px solid #f0f0f0;
+  background-color: #f0f0f0;
+  font-size: 14px;
+  padding: 6px 12px;
+  width: 100%;
+}
+.contact-us .form-field-message {
+  height: 120px;
+  border-radius: 5px;
+  border: 1px solid #f0f0f0;
+  background-color: #f0f0f0;
+  font-size: 14px;
+  padding: 7px 6px 9px 16px;
+  width: 100%;
+}
+.contact-us .form-button {
+  width: 100%;
+  margin: 0 30px 40px 30px;
+}
+.contact-us .form-button-submit {
+  float: right;
+  color: #fff;
+  background-color: #000;
+  box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.13);
+  outline: 0;
+  padding: 0 30px;
+  height: 46px;
+  min-width: 160px;
+  text-align: center;
+}
