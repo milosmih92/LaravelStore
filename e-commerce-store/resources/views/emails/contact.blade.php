@@ -11,7 +11,6 @@
 </head>
 <body>
 <main>
-    <?php xdebug_break(); ?>
     <div>Full Name: {{ htmlspecialchars($name) }}</div>
     <div>Email: {{ htmlspecialchars($email) }}</div>
     <div>Phone: {{ htmlspecialchars($phone) }}</div>

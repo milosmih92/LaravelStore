@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CarsController;
+use App\Http\Controllers\LoginController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,6 +27,17 @@ Route::get('/car/{id}', [CarsController::class, 'getCarView']);
 
 Route::get('/contact-us', function () {
     return view('contact-us');
+});
+
+
+Route::get('register', [LoginController::class, 'registerPage']);
+Route::get('login', [LoginController::class, 'loginPage']);
+Route::post('register-api', [LoginController::class, 'register']);
+Route::post('login-api', [LoginController::class, 'login']);
+Route::get('logout', [LoginController::class, 'logout']);
+
+Route::get('/login-success', function () {
+    return view('successful-login');
 });
 
 Route::fallback(function () {

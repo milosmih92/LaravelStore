@@ -18,6 +18,12 @@
         <a href="/"><img src="{{ asset('img/logo.jpg') }}" alt="Logo"></a>
         <a href="/cars" class="navigation-item">Cars</a>
         <a href="/contact-us" class="navigation-item">Contact Us</a>
+        @if (Auth::guest())
+            <a class="navigation-item" href="/login">Login</a>
+            <a class="navigation-item" href="/register">Register</a>
+        @else
+            <a class="navigation-item" href="/logout">Logout</a>
+        @endif
     </div>
 </header>
 <main>
